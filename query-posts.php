@@ -210,8 +210,10 @@ class Query_Posts_Widget extends WP_Widget {
 		$instance['title'] = strip_tags( $new_instance['title'] );
 
 		$instance['display'] = $new_instance['display'];
-		$instance['thumbnail'] = $new_instance['thumbnail'];
-		$instance['wp_reset_query'] = $new_instance['wp_reset_query'];
+
+		$instance['thumbnail'] = ( isset( $new_instance['thumbnail'] ) ? 1 : 0 );
+		$instance['wp_reset_query'] = ( isset( $new_instance['wp_reset_query'] ) ? 1 : 0 );
+		$instance['caller_get_posts'] = ( isset( $new_instance['caller_get_posts'] ) ? 1 : 0 );
 
 		$instance['post_status'] = $new_instance['post_status'];
 		$instance['post_type'] = $new_instance['post_type'];
@@ -257,8 +259,6 @@ class Query_Posts_Widget extends WP_Widget {
 		$instance['meta_key'] = strip_tags( $new_instance['meta_key'] );
 		$instance['meta_value'] = strip_tags( $new_instance['meta_value'] );
 		$instance['meta_compare'] = strip_tags( $new_instance['meta_compare'] );
-
-		$instance['caller_get_posts'] = $new_instance['caller_get_posts'];
 
 		$taxonomies = get_object_taxonomies( 'post' );
 		if ( is_array( $taxonomies ) ) :
