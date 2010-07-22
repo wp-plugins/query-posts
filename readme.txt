@@ -2,9 +2,9 @@
 Contributors: greenshady
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3687060
 Tags: widget, pages, posts, sidebar, page
-Requires at least: 2.8
-Tested up to: 2.9.1
-Stable tag: 0.2.1
+Requires at least: 3.0
+Tested up to: 3.0
+Stable tag: 0.3
 
 A WordPress widget that gives you unlimited control over showing posts and pages.
 
@@ -32,19 +32,20 @@ End users sometimes want to do complicated things but don't nave the technical *
 
 This plugin is about removing that barrier.
 
-= How do I show thumbnails? =
-
-This plugin integrates quite nicely with the <a href="http://wordpress.org/extend/plugins/get-the-image" title="Get the Image WordPress plugin">Get the Image</a> plugin.  If you've activated that plugin, you will have an additional checkbox to show thumbnails.  Thumbnails will not be shown if `ul` or `ol` is selected for `display`.
-
 = How do I set it up? =
 
 There's not a lot of work you have to do.  Just add the widget to your theme's widget area(s).  If anything, you'll probably be overwhelmed by the myriad of options.  I've included a handy guide on what each option means with supplemental reading material.  Just check out the `readme.html` included with the plugin download.
 
 == Changelog ==
 
+**Version 0.3**
+
+* Completely redesigned the entire widget to just work better.
+* Important!  Users will likely have to reset any instances of the Query Posts widget in use.
+
 **Version 0.2.1**
 
-* Fixed the checkbox issue where it didn't save on widget settings update on WordPress 2.9+.
+* Fixed the checkbox issue where it didn't save on widget settings update.
 
 **Version 0.2**
 
